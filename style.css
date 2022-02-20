@@ -1,0 +1,129 @@
+:root {
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0%;   
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+p {
+    color: var(--dark-gray);
+    margin: 25px 0;
+    margin-bottom: 50px;
+}
+
+
+#header {
+    background: url("/images/desktop-image-hero-1.jpg") no-repeat center center/cover;
+    width: 100%;
+    min-height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 50px 20px;
+}
+
+.hamburger,
+.logo {
+    color: var(--white);
+    font-size: 30px;
+}
+
+
+.hamburger {
+    margin-left: 20px;
+}
+
+.hamburger {    cursor: pointer;    }
+.hidden {   visibility: hidden; }
+.nav-bar-btn {  display: none;  }
+
+/* ############################################################################### */
+.left-right-btn {
+    width: 120px;
+    padding: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+}
+
+.left-right-btn:nth-of-type(1) {
+    visibility: visible;
+}
+
+
+/* ###########################################  ASIDE   ####################################  */
+#aside {
+    padding: 50px 0;
+    padding-bottom: 25px;
+}
+
+
+
+p,
+.title,
+.shop-now-btn {
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.shop-now-btn {
+    display: flex;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+
+.shop-now-btn:hover {cursor: pointer;}
+
+.shop-now-btn > img {
+    margin-left: 20px;
+}
+
+/* ###########################################  MAIN Section   ####################################  */
+#main {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.smaller-title {
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+.left-arrow,
+.right-arrow {
+    cursor: pointer;
+}
+
+/* ############################################################################### */
+.img {
+    width: 100%;
+}
