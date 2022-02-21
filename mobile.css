@@ -1,0 +1,62 @@
+@media only screen and (min-width: 1000px) {
+    /* ################################# GRID AREA ################################# */
+    #header {
+        grid-area: header;
+        position: relative;
+    }
+
+    #header::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(0, 0, 0, 0.2); */
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(194,189,189,1) 75%, rgba(255,254,254,0.11917098445595853) 101000%);
+        opacity: 0.2;
+        z-index: 1;
+    }
+
+    #aside {
+        grid-area: aside;
+        position: relative;
+    }
+
+    #main {
+        grid-area: main;
+        display: flex;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+            'header aside'
+            'main main'
+        ;
+    }
+
+    .hamburger {    display: none;  }
+
+    .navbar {
+        padding: 50px 70px;
+    }
+    
+    .nav-bar-btn {
+        display: block;
+        color: var(--white);
+        font-weight: 500;
+        z-index: 20;
+    }
+
+    .logo { z-index: 20; }
+
+    .left-right-btn:nth-of-type(1) {
+        display: none;
+    }
+
+    .left-right-btn:nth-of-type(2) {
+        visibility: visible;
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+}

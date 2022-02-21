@@ -17,6 +17,11 @@ body {
     font-family: 'Spartan', sans-serif;
 }
 
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
 p {
     color: var(--dark-gray);
     margin: 25px 0;
@@ -109,7 +114,7 @@ p,
 
 /* ###########################################  MAIN Section   ####################################  */
 #main {
-    padding-top: 50px;
+    padding-top: 0;
     padding-bottom: 0;
 }
 
@@ -128,3 +133,4 @@ p,
 .img {
     width: 100%;
 }
+
