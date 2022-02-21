@@ -59,14 +59,15 @@ p {
     margin-left: 20px;
 }
 
+.logo {     cursor: pointer;    }
 .hamburger {    cursor: pointer;    }
 .hidden {   visibility: hidden; }
 .nav-bar-btn {  display: none;  }
-
+.nav-bar-btn:hover {  cursor: pointer;   }
 /* ############################################################################### */
 .left-right-btn {
     width: 120px;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: var(--black);
     color: var(--white);
     font-size: 20px;
@@ -127,6 +128,7 @@ p,
 .left-arrow,
 .right-arrow {
     cursor: pointer;
+    padding: 20px 20px;
 }
 
 /* ############################################################################### */
