@@ -78,7 +78,7 @@ function openMenu() {
             navbarButtons[i].style.display = 'none';
             navbarButtons[i].style.fontWeight  = '600';
         }
-        console.log('activate');
+ 
         hamburgerMenu.classList.remove('can-be-closed'); // can not be closed
     }
 }
