@@ -121,7 +121,10 @@ p,
     letter-spacing: 10px;
 }
 
-.shop-now-btn:hover {cursor: pointer;}
+.shop-now-btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
 
 .shop-now-btn > img {
     margin-left: 20px;
@@ -143,6 +146,12 @@ p,
 .right-arrow {
     cursor: pointer;
     padding: 20px 20px;
+   
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    transform: scale(1.3);
 }
 
 /* ############################################################################### */
