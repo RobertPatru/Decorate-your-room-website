@@ -45,6 +45,11 @@
         color: var(--white);
         font-weight: 500;
         z-index: 20;
+        transition: all 0.1s linear;
+    }
+
+    .nav-bar-btn:hover {
+        transform: scale(1.15);
     }
 
     .logo { z-index: 20; }

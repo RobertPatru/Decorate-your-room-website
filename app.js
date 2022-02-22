@@ -43,6 +43,7 @@ function changeBackground(direction) {
 
 
 // ##############################       HAMBURGER MENU       ##############################
+const container = document.querySelector('.container');
 const hamburgerMenu = document.querySelector('.functional-hanburger');
 const navbar = document.querySelector('.navbar');
 const navbarButtons = document.querySelectorAll('.nav-bar-btn');
@@ -54,7 +55,9 @@ function openMenu() {
         hamburgerMenu.classList.add('can-be-closed');  // make the menu closeable - if this class is not added the close menu function doesn't activate
         hamburgerMenu.src = "/images/icon-close.svg";
     
-        navbar.style.background = 'white';
+        container.classList.add('overlay');
+        navbar.style.zIndex = '200';
+        navbar.style.background = 'var(--white)';
         navbar.style.padding  = '50px 0px';
         document.querySelector('.logo').style.display = 'none';
     
@@ -64,10 +67,10 @@ function openMenu() {
         }
     }
     else if (hamburgerMenu.classList.contains('can-be-closed')) {
-        console.log('close');
         if (hamburgerMenu.classList.contains('can-be-closed')) {
             hamburgerMenu.src = "/images/icon-hamburger.svg";
     
+            container.classList.remove('overlay');
             navbar.style.background = 'transparent';
             navbar.style.padding  = '50px 20px';
             document.querySelector('.logo').style.display = 'block';
