@@ -38,6 +38,8 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+
+    transition: all 0.2s linear;
 }
 
 .navbar {
