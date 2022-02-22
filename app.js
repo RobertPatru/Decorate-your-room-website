@@ -67,20 +67,18 @@ function openMenu() {
         }
     }
     else if (hamburgerMenu.classList.contains('can-be-closed')) {
-        if (hamburgerMenu.classList.contains('can-be-closed')) {
-            hamburgerMenu.src = "/images/icon-hamburger.svg";
-    
-            container.classList.remove('overlay');
-            navbar.style.background = 'transparent';
-            navbar.style.padding  = '50px 20px';
-            document.querySelector('.logo').style.display = 'block';
-        
-            for (let i = 0; i < navbarButtons.length; i++) {
-                navbarButtons[i].style.display = 'none';
-                navbarButtons[i].style.fontWeight  = '600';
-            }
-        } 
+        hamburgerMenu.src = "/images/icon-hamburger.svg";
 
+        container.classList.remove('overlay');
+        navbar.style.background = 'transparent';
+        navbar.style.padding  = '50px 20px';
+        document.querySelector('.logo').style.display = 'block';
+    
+        for (let i = 0; i < navbarButtons.length; i++) {
+            navbarButtons[i].style.display = 'none';
+            navbarButtons[i].style.fontWeight  = '600';
+        }
+        console.log('activate');
         hamburgerMenu.classList.remove('can-be-closed'); // can not be closed
     }
 }
